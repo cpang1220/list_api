@@ -1,0 +1,102 @@
+swagger: "2.0"
+info:
+  description: ""
+  version: "1.0.0"
+  title: "List Sum API"
+tags:
+- name: "list"
+  description: ""
+  externalDocs:
+    description: "list data source"
+    url: "http://localhost:5000/"
+schemes:
+- "https"
+- "http"
+paths:
+  /input_list:
+    get:
+      tags:
+      - "list"
+      description: "Returns the input list"
+      operationId: "getInputList"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/List"
+        "404":
+          description: "List not found"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/List_Error"
+  /total:
+    get:
+      tags:
+      - "list"
+      description: "Returns the sum of input list"
+      operationId: "getSumOfList"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/List_Sum"
+        "404":
+          description: "Sum not found"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/List_Sum_Error"
+definitions:
+  List:
+    type: "object"
+    properties:
+      status:
+        type: "string"
+        description: "success"
+      input_list:
+        type: "object"
+        description: "the input list data"
+    xml:
+      name: "List"
+  List_Sum:
+    type: "object"
+    properties:
+      status:
+        type: "string"
+        description: "success"
+      total:
+        type: "integer"
+        description: "the sum of input list"
+    xml:
+      name: "List_Sum"
+  List_Error:
+    type: "object"
+    properties:
+      status:
+        type: "string"
+        description: "HTTP error"
+      message:
+        type: "string"
+        description: "List not found"
+    xml:
+      name: "List_Error"
+  List_Sum_Error:
+    type: "object"
+    properties:
+      status:
+        type: "string"
+        description: "HTTP error"
+      message:
+        type: "string"
+        description: "Sum not found"
+    xml:
+      name: "List_Sum_Error"
