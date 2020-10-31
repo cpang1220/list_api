@@ -46,7 +46,7 @@ flask run
 ## Test
 In terminal, run the following command to execute unit test cases without coverage.
 ```
-python manage.py test
+manage.py test
 ```
 
 In terminal, run the following command to execute test with coverage.
