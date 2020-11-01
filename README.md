@@ -40,8 +40,7 @@ The API reference can be found in the swagger.yml file [swagger.yml](https://git
 ## Run application
 Run application with commands using Flask
 ```
-set FLASK_APP=run.py
-flask run
+manage.py runserver
 ```
 
 ## Test
