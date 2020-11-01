@@ -15,11 +15,11 @@ The application requires:
 ## Usage
 API path which returns the input list of numbers (HTTP GET method)
 ```
-/input_list
+http://localhost:5000/input_list
 ```
 API path which returns the sum of input list of numbers (HTTP GET method)
 ```
-/total
+http://localhost:5000/total
 ```
 
 ## Functions
