@@ -56,3 +56,4 @@ nosetests --with-coverage --cover-package=app
 
 ## Automation tools
 1. The application includes a Procfile file for users to upload the API application to Heroku. [Procfile](https://github.com/cpang1220/list_api/blob/master/Procfile)
+2. Circle CI has integrated in the application for automation build and test. The Circle CI settings are included in the config.yml file. [config.yml](https://github.com/cpang1220/list_api/blob/master/.circleci/config.yml)
