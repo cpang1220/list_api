@@ -21,7 +21,7 @@ jobs:
           name: run server
           command: |
             . venv/bin/activate
-            python manage.py runserver
+            python run.py
           background: true
       - run:
           command: |
