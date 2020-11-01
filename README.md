@@ -1,5 +1,5 @@
 # Numbers List API
-[![CircleCI](https://circleci.com/gh/cpang1220/list_api.svg?style=svg)](https://circleci.com/gh/cpang1220/list_api)
+[![cpang1220](https://circleci.com/gh/cpang1220/list_api.svg?style=svg)](https://circleci.com/gh/cpang1220/list_api)
 This API has the following functions:
 
 - **Returns the input list of numbers**
