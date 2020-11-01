@@ -2,12 +2,12 @@ swagger: "2.0"
 info:
   description: ""
   version: "1.0.0"
-  title: "List Sum API"
+  title: "Sum of list of numbers API"
 tags:
 - name: "list"
   description: ""
   externalDocs:
-    description: "list data source"
+    description: "list of numbers data source"
     url: "http://localhost:5000/"
 schemes:
 - "https"
@@ -17,7 +17,7 @@ paths:
     get:
       tags:
       - "list"
-      description: "Returns the input list"
+      description: "Returns the input list of numbers"
       operationId: "getInputList"
       produces:
       - "application/json"
@@ -38,7 +38,7 @@ paths:
     get:
       tags:
       - "list"
-      description: "Returns the sum of input list"
+      description: "Returns the sum of input list of numbers"
       operationId: "getSumOfList"
       produces:
       - "application/json"
@@ -64,7 +64,7 @@ definitions:
         description: "success"
       input_list:
         type: "object"
-        description: "the input list data"
+        description: "the input list of numbers data"
     xml:
       name: "List"
   List_Sum:
@@ -75,7 +75,7 @@ definitions:
         description: "success"
       total:
         type: "integer"
-        description: "the sum of input list"
+        description: "the sum of input list of numbers"
     xml:
       name: "List_Sum"
   List_Error:
