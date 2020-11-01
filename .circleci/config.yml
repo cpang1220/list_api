@@ -1,0 +1,41 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@0.2.1
+
+jobs:
+  build-and-test:
+    executor: python/default
+    steps:
+      - checkout
+      - python/load-cache
+      #- python/install-deps     
+      - run:
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install -r requirements.txt
+      - python/save-cache
+      - run:
+          name: run server
+          command: |
+            . venv/bin/activate
+            python manage.py runserver
+          background: true
+      - run:
+          command: |
+            . venv/bin/activate
+            python manage.py test
+      - run:
+          name: Create Artifact
+          command: |
+            echo "test completed at $(date +'%Y/%m/%d %T')" > /tmp/test_report
+      - store_artifacts:
+          path: /tmp/test_report
+          destination: test_report
+
+workflows:
+  main:
+    jobs:
+      - build-and-test
