@@ -1,4 +1,5 @@
 # Numbers List API
+[![Build Status](https://circleci.com/gh/cpang1220/list_api.svg?style=svg&circle-token=970b4f1a4f7075fad39ad4bcbd33f3710f3b2570)](https://circleci.com/gh/cpang1220/list_api)
 
 This API has the following functions:
 
