@@ -1,10 +1,10 @@
-# List API
+# Numbers List API
 
 This API has the following functions:
 
-- **Returns the input list**
+- **Returns the input list of numbers**
 
-- **Returns the sum of input list**
+- **Returns the sum of input list of numbers**
 
 ## Requirements
 The application requires:
@@ -13,24 +13,24 @@ The application requires:
 
 
 ## Usage
-API path which returns the input list (HTTP GET method)
+API path which returns the input list of numbers (HTTP GET method)
 ```
 /input_list
 ```
-API path which returns the sum of input list (HTTP GET method)
+API path which returns the sum of input list of numbers (HTTP GET method)
 ```
 /total
 ```
 
 ## Functions
-The input list of numbers data is hard-coded and retrieved from the localhost api.
+Based on the test instructions, the input list of numbers data is hard-coded and retrieved from the localhost api.
 
 The script can be found in the path: app/list_sum.py
 [list_sum](https://github.com/cpang1220/list_api/blob/master/app/list_sum.py)
 
-The following functions are applied to calculate the sum of numbers list in this API application.
+The following functions are applied to calculate the sum of list of numbers in this API application.
 1. Retrieve the input list of numbers from the input_list api configured in localhost.
-2. Output the sum of list result by using the sum(list) function.
+2. Output the sum of list of numbers result by using the sum(list) function.
 
 
 ## API Documentation
