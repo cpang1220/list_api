@@ -1,6 +1,6 @@
 # Numbers List API
 
-[![CircleCI](https://circleci.com/gh/cpang1220/list_api.svg?style=svg)](https://circleci.com/gh/cpang1220/list_api)
+[![CircleCI](https://circleci.com/gh/cpang1220/list_api.svg?style=svg)]
 
 This API has the following functions:
 
